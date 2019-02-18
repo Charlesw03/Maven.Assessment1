@@ -8,6 +8,7 @@ import java.lang.reflect.Array;
 public class PetOwner {
     private String name;
    private Array pets;
+   private Integer NumberOfPets;
 
 
     /**
@@ -40,7 +41,7 @@ public class PetOwner {
      */
     public Boolean isOwnerOf(Pet pet) {
 
-        return null;
+        return true;
     }
 
     /**
@@ -74,7 +75,7 @@ public class PetOwner {
      */
     public Integer getNumberOfPets() {
 
-        return null;
+        return NumberOfPets;
     }
 
     /**

@@ -1,6 +1,8 @@
 package com.zipcodewilmington.assessment1.part2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by leon on 2/16/18.
@@ -33,8 +35,6 @@ public class ArrayUtils {
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
 
 
-
-
        /* ArrayList<Object> list = new ArrayList<Object>();
         for (int i = 0; i < objectArray.length ; i++) {
 
@@ -56,6 +56,9 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
+    //Object objectFreq =0;
+
+
         return null;
     }
 
@@ -76,6 +79,10 @@ public class ArrayUtils {
      * given two arrays `objectArray` and `objectArrayToAdd`, return an array containing all elements in `objectArray` and `objectArrayToAdd`
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
-        return null;
+
+        /*Object[] c = {1,1,1,2,2,2,3,3,3,4,4,4};
+
+        */return null;
+
     }
 }
