@@ -5,8 +5,8 @@ package com.zipcodewilmington.assessment1.part3;
  */
 
 public class Cat extends Pet {
-private String name;
-private int age = 2147483647;
+private String name = "";
+private Integer age = Integer.MAX_VALUE;
 
     /**
      * @param name name of this Cat
@@ -14,7 +14,7 @@ private int age = 2147483647;
      */
     public Cat(String name, Integer age) {
        this.name = name;
-       this.age = Integer.MAX_VALUE;
+       this.age = age;
 
     }
 
