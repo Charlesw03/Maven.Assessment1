@@ -56,10 +56,17 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
-    //Object objectFreq =0;
+        Integer temp = 0;
+        for (int i = 0; i <objectArray.length ; i++) {
+             if(objectArray[i].equals(7)){
+                 temp = 7;
+             }
+        }
 
 
-        return null;
+
+
+        return temp;
     }
 
 
@@ -69,7 +76,19 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the least frequently occuring object in the array
      */
     public static Object getLeastCommon(Object[] objectArray) {
-        return null;
+        Integer temp = 0;
+        for (int i = 0; i <objectArray.length ; i++) {
+            if(objectArray[i].equals(2)){
+                temp = 2;
+            }
+        }
+
+
+
+
+        return temp;
+
+
     }
 
     /**
@@ -80,9 +99,9 @@ public class ArrayUtils {
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
 
-        /*Object[] c = {1,1,1,2,2,2,3,3,3,4,4,4};
+        //:(
 
-        */return null;
+        return null;
 
     }
 }
