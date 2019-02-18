@@ -5,6 +5,7 @@ public class Palindrome {
     public Integer countPalindromes(String input) {
       int val = 6;
 
+
         return val;
     }
 }

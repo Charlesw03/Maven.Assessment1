@@ -6,7 +6,7 @@ public class Jumper {
      * Complete the function below.
      */
     public int jumps(int k, int j) {
-  int jump = 3;
+    int jump = 3;
 
         return jump;
     }
