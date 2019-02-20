@@ -84,13 +84,22 @@ public class StringUtils {
      * given a string and index, return an identical string excluding the character at the specified index
      */
     public static String removeCharacterAtIndex(String str, int index) {
-        String spoof ="";
+    StringBuilder builder = new StringBuilder(str);
+                    // first index is where you start which is m in jumping then the second index is still m b/c we want to remove
+                    // m. then we need to replace it with something so we replaced it with nothing but it needs to be string
+                    // value.
+        builder.replace(index,index+1, "");
+
+        return builder.toString();
+
+        /*String spoof ="";
 
         if(str == "Jumping"){
                spoof = "Juping";
            }
 
-            return spoof;
+            return spoof;*/
+
 
     }
 

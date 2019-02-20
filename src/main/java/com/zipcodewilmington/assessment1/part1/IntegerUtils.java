@@ -35,12 +35,18 @@ public class IntegerUtils {
      * @return integer with identical digits in the reverse order
      */
     public static Integer reverseDigits(Integer val) {
-            int answer =0;
+       StringBuilder valRevd = new StringBuilder();
+       valRevd.append(""+val);
+       valRevd = valRevd.reverse();
+
+
+         /*   int answer = 0;
         if (val == 12345) {
             answer = 54321;
         }
 
-        return answer;
+        return answer;*/
+            return Integer.parseInt(valRevd.toString());
     }
 
 }
