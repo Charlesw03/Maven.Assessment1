@@ -4,16 +4,17 @@ package com.zipcodewilmington.assessment1.part3;
  * Created by leon on 2/16/18.
  */
 public class Dog extends Pet {
-   private String name = "lenny";
-   private Integer age = Integer.MAX_VALUE;
+
 
     /**
      * @param name name of this Dog
      * @param age age of this dog
      */
     public Dog(String name, Integer age) {
+
      this.name = name;
-      this.age = age;
+     this.age = age;
+
 
     }
 
@@ -21,7 +22,7 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
     public Dog(Integer age) {
-        this.age = age;
+        this("Dog name",age);
     }
 
     /**
@@ -29,7 +30,7 @@ public class Dog extends Pet {
      */
     public Dog(String name) {
 
-     this.name = name;
+     this(name,0);
     }
 
     /**
@@ -39,6 +40,7 @@ public class Dog extends Pet {
      * age is 0
      */
     public Dog() {
+    this("Dog name",0);
     }
 
     /**

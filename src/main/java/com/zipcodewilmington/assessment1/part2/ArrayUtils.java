@@ -32,9 +32,20 @@ public class ArrayUtils {
      * @return an array with identical content excluding the specified `objectToRemove`
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
-    public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
+    public static Integer[] removeValue(Integer[] objectArray, Integer objectToRemove) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        for (int i = 0; i <objectArray.length ; i++) {
+                if( !objectArray[i].equals(objectToRemove) ){
+                    list.add(objectArray[i]);
+
+                }
 
 
+
+        }
+        Integer[] array1 = new Integer[list.size()];
+        array1= list.toArray(array1);
        /* ArrayList<Object> list = new ArrayList<Object>();
         for (int i = 0; i < objectArray.length ; i++) {
 
@@ -46,7 +57,7 @@ public class ArrayUtils {
         array1 = list.toArray(array1);*/
 
 
-        return null;
+        return array1;
 
     }
 
@@ -97,11 +108,19 @@ public class ArrayUtils {
      * @return an array containing all elements in `objectArray` and `objectArrayToAdd`
      * given two arrays `objectArray` and `objectArrayToAdd`, return an array containing all elements in `objectArray` and `objectArrayToAdd`
      */
-    public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
+    public static Integer[] mergeArrays(Integer[] objectArray, Integer[] objectArrayToAdd) {
+    ArrayList<Integer> arrList = new ArrayList<>();
+        for (int i = 0; i <objectArray.length; i++) {
+            arrList.add(objectArray[i]);
+        }
 
-        //:(
+        for (int i = 0; i <objectArrayToAdd.length ; i++) {
+            arrList.add(objectArrayToAdd[i]);
+        }
 
-        return null;
+        Integer [] answer = arrList.toArray(new Integer[arrList.size()]);
+
+        return answer;
 
     }
 }

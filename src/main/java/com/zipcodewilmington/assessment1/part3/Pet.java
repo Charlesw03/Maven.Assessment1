@@ -4,10 +4,10 @@ package com.zipcodewilmington.assessment1.part3;
  * Created by leon on 2/16/18.
  */
 public abstract class Pet implements Animal {
-    private String name;
-    private int age;
-    private PetOwner newOwner;
-    private Object PetOwner;
+    public String name;
+    public int age;
+    public PetOwner newOwner;
+    public Object PetOwner;
 
     /**
      * nullary constructor
